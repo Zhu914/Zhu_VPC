@@ -1,0 +1,2 @@
+C:\Users\Zhu\Desktop\666\科研\实验\vpc-xlayer\stage2_solver\overlay.py:130: UserWarning: The problem has an expression with dimension greater than 2. Defaulting to the SCIPY backend for canonicalization.
+  prob.solve(solver=_solver())

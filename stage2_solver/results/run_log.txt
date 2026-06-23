@@ -1,0 +1,38 @@
+[workload] (6, 24)  static imb=8.654
+
+=== 1. Gap–κ sweep (full model) ===
+κ=0.20  joint_obj=  0.779  seq_obj=  0.783  GAP= 0.004  (wan95 j=1.441 s=1.469)
+κ=0.76  joint_obj=  1.455  seq_obj=  1.601  GAP= 0.146  (wan95 j=1.160 s=1.469)
+κ=1.31  joint_obj=  1.971  seq_obj=  2.420  GAP= 0.449  (wan95 j=0.839 s=1.469)
+κ=1.87  joint_obj=  2.379  seq_obj=  3.238  GAP= 0.859  (wan95 j=0.750 s=1.469)
+κ=2.43  joint_obj=  2.795  seq_obj=  4.057  GAP= 1.262  (wan95 j=0.736 s=1.469)
+κ=2.99  joint_obj=  3.185  seq_obj=  4.875  GAP= 1.690  (wan95 j=0.671 s=1.469)
+κ=3.54  joint_obj=  3.551  seq_obj=  5.694  GAP= 2.143  (wan95 j=0.643 s=1.469)
+κ=4.10  joint_obj=  3.902  seq_obj=  6.512  GAP= 2.610  (wan95 j=0.618 s=1.469)
+κ=4.66  joint_obj=  4.240  seq_obj=  7.331  GAP= 3.091  (wan95 j=0.593 s=1.469)
+κ=5.21  joint_obj=  4.564  seq_obj=  8.149  GAP= 3.585  (wan95 j=0.569 s=1.469)
+κ=5.77  joint_obj=  4.874  seq_obj=  8.967  GAP= 4.093  (wan95 j=0.545 s=1.469)
+κ=6.33  joint_obj=  5.171  seq_obj=  9.786  GAP= 4.615  (wan95 j=0.522 s=1.469)
+κ=6.89  joint_obj=  5.456  seq_obj= 10.604  GAP= 5.149  (wan95 j=0.500 s=1.469)
+κ=7.44  joint_obj=  5.734  seq_obj= 11.423  GAP= 5.688  (wan95 j=0.500 s=1.469)
+κ=8.00  joint_obj=  6.013  seq_obj= 12.241  GAP= 6.228  (wan95 j=0.500 s=1.469)
+
+[monotone non-decreasing] True
+[gap range] 0.004 -> 6.228
+[fig] saved C:\Users\Zhu\Desktop\666\科研\实验\vpc-xlayer\stage2_solver\..\figures\stage2_gap_vs_kappa.png
+
+=== 2. comparison table ===
+
+=== comparison @ κ=4.0 ===
+static         imb=  8.654  wan95= 0.000  bill_real=  0.000  bill_bgp=  0.000  obj=  8.654  cross=0.00  viol=0  iters=1
+seq            imb=  0.489  wan95= 1.469  bill_real=  6.250  bill_bgp= 12.240  obj=  6.365  cross=0.28  viol=0  iters=1
+joint          imb=  1.352  wan95= 0.622  bill_real=  5.210  bill_bgp=  5.210  obj=  3.840  cross=0.27  viol=0  iters=2
+[csv] saved C:\Users\Zhu\Desktop\666\科研\实验\vpc-xlayer\stage2_solver\results\stage2_comparison.csv
+[checkpoint ①] joint obj 优于所有基线: True  (static=8.654 seq=6.365 joint=3.840)
+[checkpoint ③] 合规违规数恒 0: True
+
+=== 3. convergence ===
+[fig] saved C:\Users\Zhu\Desktop\666\科研\实验\vpc-xlayer\stage2_solver\..\figures\stage2_convergence.png
+[checkpoint ④] 收敛曲线收敛: True  (tail swing=0.00%, 12 iters)
+
+[checkpoint ②] 完整模型下 Gap 随 κ 单调上升: PASS
