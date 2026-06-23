@@ -1,0 +1,4 @@
+method,imb,wan95_direct,bill_realized,bill_bgp,obj,cross_ratio,violations,iters
+static,8.6541,0.0000,0.0000,0.0000,8.6541,0.0000,0,1
+seq,0.4891,1.4690,6.2500,12.2398,6.3652,0.2794,0,1
+joint,1.3518,0.6221,5.2101,5.2101,3.8401,0.2690,0,2
