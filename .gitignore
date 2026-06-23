@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+results/
+figures/
+*.pyc
+_extracted.txt
